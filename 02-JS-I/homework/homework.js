@@ -44,7 +44,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  var resultado = y - x ;
+  var resultado = x - y ;
   return resultado;
 }
 
@@ -244,7 +244,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  resultado = 'Hola ' + nombre;
+  resultado = 'Hola ' + nombre +'!';
   return resultado; 
 }
 
@@ -289,16 +289,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length > 1){
-  resultado = 'Dato Incorrecto';
-    return resultado;
+    return "Dato incorrecto"
   }
-
   if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u" || letra === "A" || letra === "E" || letra === "I" || letra === "O" || letra === "U"){
-    resultado = 'Es Vocal';
-    return resultado;
+    return "Es vocal"
   }
-  resultado = 'Dato Incorrecto';
-  return resultado;
+  return "Dato incorrecto"
 }
 
 
